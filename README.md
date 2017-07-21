@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are planned to be implemented:
-
+* [x] Added UI Constraints so the app looks the same on any device that it runs on.
 * [ ] Create and added an App Icon
 * [ ] Create and added an Splash Screen
 * [ ] Ability to request an Uber from the location
