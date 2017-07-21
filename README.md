@@ -21,6 +21,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are planned to be implemented:
 * [x] Added UI Constraints so the app looks the same on any device that it runs on.
+* [x] Added color and more design to the original assignment.
+* [x] Added a gear icon for the settings button within the "Assets" catalog.
 * [ ] Create and added an App Icon
 * [ ] Create and added an Splash Screen
 * [ ] Ability to request an Uber from the location
