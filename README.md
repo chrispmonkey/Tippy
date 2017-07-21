@@ -41,7 +41,7 @@ Describe any challenges encountered while building the app.
 * Another issue I ran into was detecting if the bill amount text field was empty or not before animating the lower view with the tip and total amount. I had an issue where the lower view would animate when the text field had one character in it and I only wanted it to animate when there was no characters in it or when the user first put a character in it. I found a way to make it work by using a boolean value to check along with the character count that allowed me to achieve the desired effect.
 ## License
 
-    Copyright [2017] [Christopher L. Price]
+    Copyright 2017 Christopher L. Price
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
