@@ -4,7 +4,7 @@
 
 Submitted by: **Christopher L. Price**
 
-Time spent: **8** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
