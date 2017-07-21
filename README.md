@@ -15,16 +15,16 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] UI animations
-* [?] Remembering the bill amount across app restarts (if <10mins)
-* [?] Using locale-specific currency and currency thousands separators.
-* [?] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [ ] Using locale-specific currency and currency thousands separators.
+* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-* [?] Created and added an App Icon
-* [?] Created and added an Splash Screen
-* [?] Ability to request an Uber from the location
+* [ ] Created and added an App Icon
+* [ ] Created and added an Splash Screen
+* [ ] Ability to request an Uber from the location
 
 ## Video Walkthrough 
 
