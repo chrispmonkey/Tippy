@@ -19,11 +19,10 @@ The following **optional** features are implemented:
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
-The following **additional** features are implemented:
+The following **additional** features are planned to be implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
-* [ ] Created and added an App Icon
-* [ ] Created and added an Splash Screen
+* [ ] Create and added an App Icon
+* [ ] Create and added an Splash Screen
 * [ ] Ability to request an Uber from the location
 
 ## Video Walkthrough 
