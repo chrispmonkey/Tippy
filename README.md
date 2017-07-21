@@ -15,16 +15,16 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] UI animations
-* [?] Remembering the bill amount across app restarts (if <10mins)
-* [?] Using locale-specific currency and currency thousands separators.
-* [?] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [ ] Using locale-specific currency and currency thousands separators.
+* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-* [?] Created and added an App Icon
-* [?] Created and added an Splash Screen
-* [?] Ability to request an Uber from the location
+* [ ] Created and added an App Icon
+* [ ] Created and added an Splash Screen
+* [ ] Ability to request an Uber from the location
 
 ## Video Walkthrough 
 
@@ -41,7 +41,7 @@ Describe any challenges encountered while building the app.
 * Another issue I ran into was detecting if the bill amount text field was empty or not before animating the lower view with the tip and total amount. I had an issue where the lower view would animate when the text field had one character in it and I only wanted it to animate when there was no characters in it or when the user first put a character in it. I found a way to make it work by using a boolean value to check along with the character count that allowed me to achieve the desired effect.
 ## License
 
-    Copyright [2017] [Christopher L. Price]
+    Copyright 2017 Christopher L. Price
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
