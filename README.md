@@ -55,7 +55,7 @@ Bonus: The way that I think that this is occuring under the hood, is that within
 
 **Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer**: Since Swift uses Automatic Reference Counting (ARC) to manage memory, the way that you get a strong reference cycle for closusres is 
+**Answer**: Since Swift uses Automatic Reference Counting (ARC) to manage memory, the way that you get a strong reference cycle for closures are to make instances related to eachother. When Swift sees at least one strong reference, ARC knows that it is still needed and doesn't destroy it for memory management. ARC will however detroy the instance if it sees that the relationship is broken, signaling that the instance is no longer needed later on. I guess a simple way to explain this would be to compare it to 
 
 ## License
 
