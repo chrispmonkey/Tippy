@@ -17,11 +17,42 @@ class MainViewController: UIViewController {
     @IBOutlet weak var bottomTotalsView: UIView!
     var defaultTipAmountIndex = 0
     var animate = true
+    var previousBillAmount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        animate = false
+        setPreviousBillAmount()
+        billField.becomeFirstResponder()
+    }
+    
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+    }
+    
+    func setPreviousBillAmount(){
+        
+        // Check to see if app hasn't been open in more than 10 minutes. If longer than 10 minutes set bill amount to 0
+        let lastTimeAppWasOpen = (UserDefaults.standard.object(forKey: "LastTimeAppWasOpen")) as? Date ?? Date()
+        let lastTimeAppWasOpenPlusTenMinutes = lastTimeAppWasOpen.addingTimeInterval(10.0 * 60.0)
+        // Set the previous bill amount if time is less than 10 minutes
+        if (lastTimeAppWasOpen < lastTimeAppWasOpenPlusTenMinutes){
+            // Set the bill amount to the previous bill amount
+            let checkThis = UserDefaults.standard.string(forKey: "PreviousBillAmount") ?? ""
+            if(checkThis.isEmpty){
+                billField.text = ""
+                bottomTotalsView.isHidden = true
+            }else{
+                
+                bottomTotalsView.isHidden = false
+                billField.text = (UserDefaults.standard.string(forKey: "PreviousBillAmount"))
+                animate = false
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,10 +85,14 @@ class MainViewController: UIViewController {
         
         tipLabel.text = String(format:  "$%.2f", tip)
         totalLabel.text = String(format:  "$%.2f", total)
+        
+        let defaults = UserDefaults.standard
+        defaults.set(billField.text, forKey: "PreviousBillAmount")
+        defaults.synchronize()
     }
     
     func animateViews(){
-        if(billField.text?.characters.count == 1 && animate == true){
+        if(animate == true && billField.text?.characters.count == 1){
             animate = false
             bottomTotalsView.isHidden = false
             // Optionally initialize the property to a desired starting value

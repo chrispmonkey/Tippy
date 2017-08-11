@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,11 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
     }
     
-
+    @IBAction func darkThemeSwitchValueChanged(_ sender: Any) {
+        // Activate Dark Theme
+        
+    }
+    
     /*
     // MARK: - Navigation
 

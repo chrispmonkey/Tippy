@@ -15,6 +15,7 @@
 		A7075EDD1F21F93D00CD6862 /* TippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7075EDC1F21F93D00CD6862 /* TippyUITests.swift */; };
 		A7075EEB1F21FB0E00CD6862 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7075EEA1F21FB0E00CD6862 /* MainViewController.swift */; };
 		A7075EED1F220D3500CD6862 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7075EEC1F220D3500CD6862 /* SettingsViewController.swift */; };
+		F14F6BC1BEB210C421E0E021 /* Pods_Tippy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68759E6B24B6FB748646F57D /* Pods_Tippy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68759E6B24B6FB748646F57D /* Pods_Tippy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tippy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE138CE656CBBDC6F902117 /* Pods-Tippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tippy/Pods-Tippy.debug.xcconfig"; sourceTree = "<group>"; };
 		A7075EB91F21F93C00CD6862 /* Tippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7075EBC1F21F93C00CD6862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7075EC11F21F93C00CD6862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		A7075EDE1F21F93D00CD6862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7075EEA1F21FB0E00CD6862 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A7075EEC1F220D3500CD6862 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A7BF1AA31F2DB6A500F4BB17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A7F841D91F3AFA71001F6EBA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDAFB30F4B2283570BABE0AE /* Pods-Tippy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tippy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tippy/Pods-Tippy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14F6BC1BEB210C421E0E021 /* Pods_Tippy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +86,14 @@
 		A7075EB01F21F93C00CD6862 = {
 			isa = PBXGroup;
 			children = (
+				A7F841D91F3AFA71001F6EBA /* Podfile */,
+				A7BF1AA31F2DB6A500F4BB17 /* README.md */,
 				A7075EBB1F21F93C00CD6862 /* Tippy */,
 				A7075ED01F21F93C00CD6862 /* TippyTests */,
 				A7075EDB1F21F93D00CD6862 /* TippyUITests */,
 				A7075EBA1F21F93C00CD6862 /* Products */,
+				D15751F0989C13FFC8E6272D /* Pods */,
+				B1AC3B97578C177742BB7453 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +139,23 @@
 			path = TippyUITests;
 			sourceTree = "<group>";
 		};
+		B1AC3B97578C177742BB7453 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68759E6B24B6FB748646F57D /* Pods_Tippy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D15751F0989C13FFC8E6272D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE138CE656CBBDC6F902117 /* Pods-Tippy.debug.xcconfig */,
+				BDAFB30F4B2283570BABE0AE /* Pods-Tippy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7075EE11F21F93D00CD6862 /* Build configuration list for PBXNativeTarget "Tippy" */;
 			buildPhases = (
+				630DD6A6687434833CEC9A38 /* [CP] Check Pods Manifest.lock */,
 				A7075EB51F21F93C00CD6862 /* Sources */,
 				A7075EB61F21F93C00CD6862 /* Frameworks */,
 				A7075EB71F21F93C00CD6862 /* Resources */,
+				5AF333B76AD03D89A87D3470 /* [CP] Embed Pods Frameworks */,
+				759F4D8C3BA0927581ABDB92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +284,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AF333B76AD03D89A87D3470 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tippy/Pods-Tippy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		630DD6A6687434833CEC9A38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		759F4D8C3BA0927581ABDB92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tippy/Pods-Tippy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7075EB51F21F93C00CD6862 /* Sources */ = {
@@ -425,6 +504,7 @@
 		};
 		A7075EE21F21F93D00CD6862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE138CE656CBBDC6F902117 /* Pods-Tippy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QCHSMSH3C7;
@@ -440,6 +520,7 @@
 		};
 		A7075EE31F21F93D00CD6862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAFB30F4B2283570BABE0AE /* Pods-Tippy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QCHSMSH3C7;
@@ -534,6 +615,7 @@
 				A7075EE31F21F93D00CD6862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7075EE41F21F93D00CD6862 /* Build configuration list for PBXNativeTarget "TippyTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +624,7 @@
 				A7075EE61F21F93D00CD6862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7075EE71F21F93D00CD6862 /* Build configuration list for PBXNativeTarget "TippyUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +633,7 @@
 				A7075EE91F21F93D00CD6862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
